@@ -1,0 +1,232 @@
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+#features{
+  text-align:center;
+}
+
+#features img {
+  margin: 0 0 20px;
+}
+
+footer {
+  background-color: #404040;
+  color:#eee;
+  padding: 20px;
+}
+
+footer h6{
+  font-size: 1em;
+}
+
+footer p{
+  font-size: 0.9em;
+}
+
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+body {
+  -webkit-font-smoothing:antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: 'Lato', 'Open Sans';
+}
+.well .page-header{
+  margin-top: 0;
+}
+
+.well .page-header h1{
+  margin-top: 0;
+}
+
+.btnText-large-subscribe{
+  font-weight: bold;
+  color: #f4f4f4;
+}
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+
+.navbar-brand {
+  padding: 13px 15px;
+}
+
+.navbar-default {
+  background-color: #404040;
+  border-color: #EEE;
+  color: black;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color:#f2f2f2;
+  font-size: 1.1em;
+  font-family: 'Lato', 'Open Sans';
+  font-weight: bold;
+}
+
+.navbar-default .navbar-nav > li:focus,
+.navbar-default .navbar-nav > li:hover {
+  color:white;
+  background-color: #DE1B1B;
+  transition: all 0.4s ease 0s;
+}
+
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  color:white;
+  background-color: #b61616;
+}
+
+ .navbar-default .navbar-toggle:hover,
+ .navbar-default .navbar-toggle:focus {
+  background-color: #DE1B1B;
+  outline: none !important;
+  transition: 0.2s;
+}
+
+ .navbar-default .navbar-toggle .icon-bar{
+   background-color:#f2f2f2;
+ }
+
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+
+/*
+#myCarousel{
+  height:300px;
+}
+.carousel-caption {
+top: 20% !important;
+text-align: cente;
+bottom: initial;
+} */
+
+#slide1{
+  background: url('../../images/carousel_medium_01.jpg') top center no-repeat;
+}
+#slide2{
+  background: url('../../images/carousel_medium_02.jpg') top center no-repeat;
+}
+#slide3{
+  background: url('../../images/carousel_medium_03.jpg') top center no-repeat;
+}
+
+#myCarousel {
+  margin-top: 49px;
+}
+
+.carousel-caption{
+  font-size: 24px;
+}
+
+.carousel-caption h4{
+  font-size: 32px;
+}
+
+.carousel-indicators{
+  margin-bottom: -1px;
+}
+.carousel-indicators li {
+    width : 18px;
+    height: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.3);
+    transition: 0.2s;
+}
+.carousel-indicators .active {
+    width :18px;
+    height:18px;
+    margin: 1px;
+    background-color: #B71427;
+}
+
+.carousel-indicators li:hover {
+    background-color: white;
+}
+
+.carousel-control .glyphicon {
+  color:#f2f2f2;
+  transition: 0.2s;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background: transparent !important;
+  filter: none !important;
+  background-image:none;
+  outline: 0;
+  opacity: 1;
+}
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+.alert {
+  margin-top: 20px;
+  display: none;
+}
+
+.well {
+  margin: 20px 0;
+}
+
+.tabbable img.thumbnail {
+  margin: 0 10px 10px 0;
+}
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  #myCarousel .item{
+    height:310px;
+  }
+  #slide1{
+    background: url('../../images/carousel_small_01.jpg') top center no-repeat;
+  }
+  #slide2{
+    background: url('../../images/carousel_small_02.jpg') top center no-repeat;
+  }
+  #slide3{
+    background: url('../../images/carousel_small_03.jpg') top center no-repeat;
+  }
+  .carousel-caption{
+    font-size: 15px;
+  }
+
+  .carousel-caption h4{
+    font-size: 24px;
+  }
+}
+
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  #myCarousel .item{
+    height:500px;
+  }
+  #slide1{
+    background: url('../../images/carousel_large_01.jpg') top center no-repeat;
+  }
+  #slide2{
+    background: url('../../images/carousel_large_02.jpg') top center no-repeat;
+  }
+  #slide3{
+    background: url('../../images/carousel_large_03.jpg') top center no-repeat;
+  }
+}
