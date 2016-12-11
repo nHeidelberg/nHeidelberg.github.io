@@ -1,3 +1,5 @@
+
+
 /* --------------------------------------
    Layout
    -------------------------------------- */
@@ -5,8 +7,9 @@
   text-align:center;
 }
 
+
 #features img {
-  margin: 0 0 20px;
+  margin: 0 0 20px 0;
 }
 
 footer {
@@ -23,9 +26,21 @@ footer p{
   font-size: 0.9em;
 }
 
+/* --------------------------------------
+   Genral Styles
+   -------------------------------------- */
+.panel img:hover{
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+.well {
+  margin: 20px 0;
+}
+
 
 /* --------------------------------------
-   Typography
+   Main parts fonts and margins
    -------------------------------------- */
 body {
   -webkit-font-smoothing:antialiased;
@@ -63,7 +78,6 @@ body {
   color:#f2f2f2;
   font-size: 1.1em;
   font-family: 'Lato', 'Open Sans';
-  font-weight: bold;
 }
 
 .navbar-default .navbar-nav > li:focus,
@@ -106,18 +120,24 @@ text-align: cente;
 bottom: initial;
 } */
 
-#slide1{
-  background: url('../../images/carousel_medium_01.jpg') top center no-repeat;
-}
-#slide2{
-  background: url('../../images/carousel_medium_02.jpg') top center no-repeat;
-}
-#slide3{
-  background: url('../../images/carousel_medium_03.jpg') top center no-repeat;
-}
+
 
 #myCarousel {
   margin-top: 49px;
+}
+
+#myCarousel .item{
+  height:400px;
+}
+
+#slide1{
+  background: url('http://placehold.it/940x400') top center no-repeat;
+}
+#slide2{
+  background: url('../../images/carousel_large_02.jpg') top center no-repeat;
+}
+#slide3{
+  background: url('../../images/carousel_large_03.jpg') top center no-repeat;
 }
 
 .carousel-caption{
@@ -167,22 +187,6 @@ bottom: initial;
 }
 
 /* --------------------------------------
-   Global Styles
-   -------------------------------------- */
-.alert {
-  margin-top: 20px;
-  display: none;
-}
-
-.well {
-  margin: 20px 0;
-}
-
-.tabbable img.thumbnail {
-  margin: 0 10px 10px 0;
-}
-
-/* --------------------------------------
    Media Queries
    -------------------------------------- */
 
@@ -197,7 +201,7 @@ bottom: initial;
     height:310px;
   }
   #slide1{
-    background: url('../../images/carousel_small_01.jpg') top center no-repeat;
+    background: url('http://placehold.it/728x310') top center no-repeat;
   }
   #slide2{
     background: url('../../images/carousel_small_02.jpg') top center no-repeat;
@@ -221,7 +225,7 @@ bottom: initial;
     height:500px;
   }
   #slide1{
-    background: url('../../images/carousel_large_01.jpg') top center no-repeat;
+    background: url('http://placehold.it/1170x502') top center no-repeat;
   }
   #slide2{
     background: url('../../images/carousel_large_02.jpg') top center no-repeat;
