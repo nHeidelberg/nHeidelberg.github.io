@@ -38,6 +38,17 @@ footer p{
   margin: 20px 0;
 }
 
+body {
+  background-color: #d1d1d1;
+}
+.panel {
+  background-color: #d1d1d1;
+  border-color:  #777373;
+}
+.panel .panel-heading{
+  background-color: #aaa7a7;
+  border-color:  #777373;
+}
 
 /* --------------------------------------
    Main parts fonts and margins
