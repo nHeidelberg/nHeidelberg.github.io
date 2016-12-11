@@ -38,6 +38,9 @@ footer p{
   margin: 20px 0;
 }
 
+
+/* Modications of styles */
+
 body {
   background-color: #d1d1d1;
 }
@@ -50,6 +53,12 @@ body {
   border-color:  #777373;
 }
 
+.list-group{
+  background-color: #e2e2e2;
+}
+.list-group .list-group-item{
+  border-color:  #b0b1b2;
+}
 /* --------------------------------------
    Main parts fonts and margins
    -------------------------------------- */
