@@ -7,10 +7,15 @@
   text-align:center;
 }
 
-
 #features img {
-  margin: 0 0 20px 0;
+  position:relative;
+  margin: 0 0 10px 0;
 }
+
+#journalSection {
+  margin-top:0;
+}
+
 
 footer {
   background-color: #404040;
@@ -42,7 +47,7 @@ footer p{
 /* Modications of styles */
 
 body {
-  background-color: #d1d1d1;
+  background-color:#e0e0e0;
 }
 .panel {
   background-color: #d1d1d1;
@@ -59,6 +64,7 @@ body {
 .list-group .list-group-item{
   border-color:  #b0b1b2;
 }
+
 /* --------------------------------------
    Main parts fonts and margins
    -------------------------------------- */
@@ -80,6 +86,24 @@ body {
   color: #f4f4f4;
 }
 
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Open sans';
+}
+
+#journalSection .pubJournal {
+  font-size : 30px;
+}
+
+.well .subscribe{
+  font-size : 30px;
+}
+
+#featuresHeading small{
+  color: #204159;
+}
+#featuresHeading .MathetMaroc {
+  font-size : 28px;
+}
 /* --------------------------------------
    Navbar
    -------------------------------------- */
@@ -162,10 +186,12 @@ bottom: initial;
 
 .carousel-caption{
   font-size: 24px;
+  font-family: 'Open Sans';
 }
 
 .carousel-caption h4{
   font-size: 32px;
+  font-family: 'Open Sans';
 }
 
 .carousel-indicators{
@@ -205,6 +231,14 @@ bottom: initial;
   outline: 0;
   opacity: 1;
 }
+
+/* --------------------------------------
+   Members
+   -------------------------------------- */
+   .members {
+     margin-top: 100px;
+     text-align: center;
+   }
 
 /* --------------------------------------
    Media Queries
