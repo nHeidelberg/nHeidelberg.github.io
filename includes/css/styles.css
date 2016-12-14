@@ -47,11 +47,7 @@ footer p{
 /* Modications of styles */
 
 body {
-<<<<<<< HEAD
   background-color:#e0e0e0;
-=======
-  background-color:#d1d1d1;
->>>>>>> origin/master
 }
 .panel {
   background-color: #d1d1d1;
@@ -239,10 +235,6 @@ bottom: initial;
 /* --------------------------------------
    Members
    -------------------------------------- */
-   .members {
-     margin-top: 100px;
-     text-align: center;
-   }
 
 /* --------------------------------------
    Media Queries
