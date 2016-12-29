@@ -49,10 +49,12 @@ footer p{
 body {
   background-color:#e0e0e0;
 }
+
 .panel {
   background-color: #d1d1d1;
   border-color:  #777373;
 }
+
 .panel .panel-heading{
   background-color: #aaa7a7;
   border-color:  #777373;
@@ -81,10 +83,11 @@ body {
   margin-top: 0;
 }
 
+
 .btnText-large-subscribe{
-  font-weight: bold;
-  color: #f4f4f4;
+  font-size: 20px;
 }
+
 
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Open sans';
@@ -107,7 +110,6 @@ h1,h2,h3,h4,h5,h6 {
 /* --------------------------------------
    Navbar
    -------------------------------------- */
-
 .navbar-brand {
   padding: 13px 15px;
 }
@@ -153,7 +155,6 @@ h1,h2,h3,h4,h5,h6 {
 /* --------------------------------------
    Carousel
    -------------------------------------- */
-
 /*
 #myCarousel{
   height:300px;
@@ -232,9 +233,6 @@ bottom: initial;
   opacity: 1;
 }
 
-/* --------------------------------------
-   Members
-   -------------------------------------- */
 
 /* --------------------------------------
    Media Queries

@@ -15,6 +15,7 @@
 
 		<!-- CSS -->
 		<link href="includes/css/styles.css" rel="stylesheet">
+		<link href="includes/css/modalcontactstyle.css" rel="stylesheet">
 
 		<!--Modernizr -->
 		<script src="includes/js/modernizr-2.6.2.min.js"></script>
@@ -54,7 +55,7 @@
 						<a href="http://forum.expii.com/category/39/fran%C3%A7ais" target="_blank"> Forum </a>
 					</li>
 					<li>
-						<a href="contact.html" > Contact </a>
+						<a href="#contact" data-toggle="modal"> Contact </a>
 					</li>
 			</div> <!-- end nav-collapse -->
 		</div><!-- end container -->
@@ -168,15 +169,16 @@
 			<div class="well">
 				<div class="page-header">
 					<h1> <span class="glyphicon glyphicon-user subscribe" aria-hidden="true"></span>
-						Inscrivez-vous Sur <i>expii</i> ! </h1>
+						Inscrivez-vous Sur <i>expii</i> !
+					</h1>
 				</div> <!-- end page-header -->
 
 				<p class="lead"> Nous avons une section dans la plate-forme  <i>expii!</i>&nbsp; Tout le monde est le bienvenu <br>
 					Inscrivez-vous pour découvrez et participez à nos discussion en cliquant sur la bouton ci-dessous. </p>
-				<a  href="https://www.expii.com" target="_blank" class="btn btn-large btn-primary">
-					<span class="glyphicon glyphicon-pencil"></span><span class="btnText-large-subscribe">
-					 &nbsp; Inscription </span> </a>
-
+				<a  href="https://www.expii.com" target="_blank" class="btn btn-medium btn-primary">
+					<span class="glyphicon glyphicon-pencil"></span>
+					<span class="btnText-large-subscribe"> &nbsp; Inscription&nbsp;</span>
+				</a>
 			</div> <!-- end well -->
 		</div> <!-- end col-12 -->
 	</div> <!-- end row -->
@@ -261,12 +263,31 @@
 	<br>
 	</div><!-- end container -->
 
+
+	<div id="contact" class="modal fade">
+			 <div class="modal-dialog">
+					 <div class="modal-content">
+							 <div class="modal-header">
+									 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									 <h3 class="modal-title">Contactez Nous</h3>
+							 </div>
+							 <div class="modal-body">
+									 <p>
+										 Utilisez l'addresse e-mail: -----@-----.--- pour nous contacter.
+									 </p>
+									 <button type="button" class="btn btn-primary pull-right" data-dismiss="modal">Je comprends!</button>
+									 <br><br>
+							 </div>
+					 </div>
+			 </div>
+	 </div>
+
 <footer>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-3">
 			<h6>L'association Math&amp;Maroc 2016 </h6>
-			<p> Logo </p>
+			<img src="images/logo-230x153.png" alt="" class="img-circle img-responsive center-block" >
 			</div><!-- end col-sm-2 -->
 
 			<div class="col-sm-5">
@@ -281,7 +302,7 @@
 					<li><a href="publications.html">Publications</a></li>
 					<li><a href="informations.html">Informations</a></li>
 					<li><a href="members.html">Membres</a></li>
-					<li><a href="contact.html">Contactez-nous</a></li>
+					<li><a href="#contact">Contactez-nous</a></li>
 					<li><a href="http://forum.expii.com/category/39/fran%C3%A7ais">Forum</a></li>
 				</ul>
 			</div><!-- end col-sm-2 -->
