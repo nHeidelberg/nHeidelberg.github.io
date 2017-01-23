@@ -47,24 +47,22 @@ footer p{
 /* Modications of styles */
 
 body {
-  background-color:#e0e0e0;
+  background-color: #fcfcfc;
 }
 
 .panel {
-  background-color: #d1d1d1;
-  border-color:  #777373;
+  background-color:  #fdfdfd;
 }
 
 .panel .panel-heading{
-  background-color: #aaa7a7;
-  border-color:  #777373;
+
 }
 
 .list-group{
-  background-color: #e2e2e2;
+  background-color: #f9f9f9;
 }
 .list-group .list-group-item{
-  border-color:  #b0b1b2;
+  border-color:  ;
 }
 
 /* --------------------------------------
@@ -75,12 +73,14 @@ body {
   text-rendering: optimizeLegibility;
   font-family: 'Lato', 'Open Sans';
 }
-.well .page-header{
-  margin-top: 0;
-}
 
-.well .page-header h1{
-  margin-top: 0;
+.well {
+  background-color: #fafafa;
+  box-shadow: 0px 0px #888888;
+}
+.well .page-header{
+  margin-top: 0px;
+  font-size: 28px;
 }
 
 
@@ -88,21 +88,18 @@ body {
   font-size: 20px;
 }
 
+.well .lead {
+    font-size: 20px;
+}
+
 
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Open sans';
 }
 
-#journalSection .pubJournal {
-  font-size : 30px;
-}
-
-.well .subscribe{
-  font-size : 30px;
-}
 
 #featuresHeading small{
-  color: #204159;
+  color: #474747;
 }
 #featuresHeading .MathetMaroc {
   font-size : 28px;
@@ -115,7 +112,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .navbar-default {
-  background-color: #404040;
+  background-color: black;
   border-color: #EEE;
   color: black;
 }
