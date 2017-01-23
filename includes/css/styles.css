@@ -48,6 +48,9 @@ footer p{
 
 body {
   background-color: #fcfcfc;
+  color: black;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .panel {
