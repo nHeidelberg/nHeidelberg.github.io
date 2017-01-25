@@ -9,7 +9,7 @@
 
 #features img {
   position:relative;
-  margin: 0 0 10px 0;
+  margin: 10px 10px 20px 10px;
 }
 
 #journalSection {
@@ -47,18 +47,26 @@ footer p{
 /* Modications of styles */
 
 body {
-  background-color: #fcfcfc;
+  background-color: white;
   color: black;
   text-align: justify;
   text-justify: inter-word;
 }
 
+p{
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .panel {
-  background-color:  #fdfdfd;
+  background-color:  #fafafa;
+  border: 0px;
+  box-shadow: 0px 0px 0px 0px;
+  border-radius: 0px 0px 0px 0px;
 }
 
 .panel .panel-heading{
-
+  border:0px;
 }
 
 .list-group{
@@ -78,12 +86,33 @@ body {
 }
 
 .well {
-  background-color: #fafafa;
   box-shadow: 0px 0px #888888;
+  border-radius: 0;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
+
+.expiiWell {
+  background-color: #b1a2db;
+}
+
+.expiiWell .header{
+  margin: -19px -19px 19px -19px;
+  border-bottom: 0px !important;
+  background-color: rgb(44,8,139);
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+.well .lead {
+  margin: 20px 20px 20px 20px;
+}
+
 .well .page-header{
   margin-top: 0px;
   font-size: 28px;
+  border-bottom: 1px solid black;
 }
 
 
@@ -107,6 +136,10 @@ h1,h2,h3,h4,h5,h6 {
 #featuresHeading .MathetMaroc {
   font-size : 28px;
 }
+
+.fei {
+  background-color: #b1a2db;
+}
 /* --------------------------------------
    Navbar
    -------------------------------------- */
@@ -115,15 +148,23 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .navbar-default {
-  background-color: black;
+  background-color: rgb(48, 48, 47);
   border-color: #EEE;
-  color: black;
+  color: white;
+  text-align: center;
+  display:table-cell;
+  vertical-align: middle;
+}
+
+.navbar-nav li a {
+    line-height: 30px;
 }
 
 .navbar-default .navbar-nav > li > a {
   color:#f2f2f2;
   font-size: 1.1em;
   font-family: 'Lato', 'Open Sans';
+  color:white;
 }
 
 .navbar-default .navbar-nav > li:focus,
