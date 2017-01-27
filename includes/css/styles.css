@@ -49,14 +49,9 @@ footer p{
 body {
   background-color: white;
   color: black;
-  text-align: justify;
-  text-justify: inter-word;
 }
 
-p{
-  text-align: justify;
-  text-justify: inter-word;
-}
+
 
 .panel {
   background-color:  #fafafa;
@@ -85,6 +80,9 @@ body {
   font-family: 'Lato', 'Open Sans';
 }
 
+.text-stage {
+  font-size: 17px;
+}
 .well {
   box-shadow: 0px 0px #888888;
   border-radius: 0;
@@ -92,8 +90,11 @@ body {
   margin-bottom: 25px;
 }
 
+
 .expiiWell {
   background-color: #b1a2db;
+  border: 1px  dashed  rgb(44,8,139);
+  padding-bottom: 25px;
 }
 
 .expiiWell .header{
@@ -105,9 +106,52 @@ body {
   color: white;
 }
 
+.newsWell {
+  background-color: #f9f7f7;
+  border: 1px  solid  #db0606;
+}
+
+.newsWellBody{
+  margin: -19px -19px -19px -19px;
+  overflow-y: scroll;
+  height:200px;
+}
+
+.newsWell .header{
+  margin: -19px -19px 19px -19px;
+  border-bottom: 0px !important;
+  background-color: #db0606;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 57px;
+}
+
+.newsWellBody ul {
+  list-style-type: none;
+}
+
+.newsWellBody li {
+  margin-left: -40px;
+  padding: 5px 15px;
+  border-bottom: 1px solid #db0606;
+}
+.newsWellBody li:last-child{
+  border-bottom: none;
+}
+.newsWellBody h4{
+    font-weight: bold;
+}
+
+
+
 .well .lead {
   margin: 20px 20px 20px 20px;
 }
+
+
 
 .well .page-header{
   margin-top: 0px;
@@ -117,7 +161,14 @@ body {
 
 
 .btnText-large-subscribe{
-  font-size: 20px;
+  justify-content: center;
+  font-size: 17px;
+  font-family: Open Sans;
+}
+
+.btnSubs {
+  background-color: #315cbf;
+  border: 1px white;
 }
 
 .well .lead {
@@ -181,12 +232,17 @@ h1,h2,h3,h4,h5,h6 {
   color:white;
   background-color: #b61616;
 }
+ .navbar-default .navbar-toggle{
+   border-radius: 0px !important ;
+ }
 
  .navbar-default .navbar-toggle:hover,
  .navbar-default .navbar-toggle:focus {
   background-color: #DE1B1B;
   outline: none !important;
+  transform: scale(1.05);
   transition: 0.2s;
+
 }
 
  .navbar-default .navbar-toggle .icon-bar{
@@ -321,5 +377,17 @@ bottom: initial;
   }
   #slide3{
     background: url('../../images/carousel_large_03.jpg') top center no-repeat;
+  }
+  .lead {
+    text-align: justify;
+  }
+}
+
+@media (min-width: 500px){
+  .lead {
+    text-align: justify;
+  }
+  .text-stage {
+    text-align: justify;
   }
 }
