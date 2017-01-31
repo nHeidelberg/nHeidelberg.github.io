@@ -15,6 +15,7 @@
 
 		<!-- CSS -->
 		<link href="includes/css/styles.css" rel="stylesheet">
+		<link href="includes/css/newsstyle.css" rel="stylesheet">
 		<link href="includes/css/modalcontactstyle.css" rel="stylesheet">
 
 
@@ -59,9 +60,87 @@
     			</div> <!-- end nav-collapse -->
     		</div><!-- end container -->
     	</div>  <!-- end navbar -->
+			<div class="section FirstSection">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10 sectionBody">
+						<img data-toggle="modal" data-target="#myModal" src="images/carousel_large_02.jpg" alt="" class="img-responsive img-thumbnail pull-left">
+						<h3> Titre <small> Janvier 2017 </small></h3>
+						<p>
+							Math&amp;Maroc rencontre son homologue français Animath. Afin de souligner les liens forts
+							entre les deux associations, Animath accepte d’envoyer un de ses encadrants au Maroc pour
+							donner cours au stage de Janvier. Ainsi, monsieur Conchon-kerjan participera au stage ayant
+							lieu du 31 Janvier au 5 février.
+						</p>
+						<!-- The Modal -->
+
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+			</div> <!-- end section -->
+			<div class="section">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10 sectionBody">
+						<img data-toggle="modal" data-target="#myModal" src="images/expii-200.png" alt="" class="img-responsive img-thumbnail pull-left">
+
+						<h3> Titre <small> 27 Novembre 2016 </small></h3>
+						<p>
+							L’association Math&Maroc lance son forum en concluant un partenariat avec Po-Shen Loh,
+							l’encadrant de l’équipe américaine. Nous disposons donc d’un forum ergonomique compatible avec
+							l’écriture en LaTex sur lequel d’anciens participants des IMOs mais aussi des marocains en
+							grandes écoles peuvent aider toute personnes intéressées par des mathématiques olympiques.
+						</p>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+			</div> <!-- end section -->
+			<div class="section">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10 sectionBody">
+						<img data-toggle="modal" data-target="#myModal" src="images/expii-200.png" alt="" class="img-responsive img-thumbnail pull-left">
+
+						<h3> Titre <small> 24 Novembre 2016 </small></h3>
+						<p>
+							Pour sceller le partenariat entre Math&Maroc et le ministère de l’éducation nationale,
+							Amine Natik, membre de l’association, a aidé le ministère a encadré le stage de préparation
+							des jeunes marocains sélectionnés pour les olympiades 2017.
+							Il a ainsi donné plusieurs cours et rédigé l’examen de fin de stage.
+						</p>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+			</div> <!-- end section -->
+			<div class="section LastSection">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10 sectionBody">
+						<img data-toggle="modal" data-target="#myModal" src="images/expii-200.png" alt="" class="img-responsive img-thumbnail pull-left">
+						<h3> Titre <small> 4 Novembre 2016 </small></h3>
+						<p>
+							L’association est enfin naît. Benounna Amine, Mouchtaki Omar et Zerhouni El Ghali ont déposé
+							le dossier et obtiennent l’approbation des autorités casablancaises. Dans la foulée,
+							le wali de Casablanca Mr. Safir nous fait l’honneur d’accepter de devenir président d’honneur de l’association.
+							C’est ainsi que débuta le partenariat entre Math&Maroc et X-Maroc
+							(association des polytechniciens marocains).
+						</p>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+			</div> <!-- end section -->
     </div> <!-- end main container -->
 
-
+			<div id="myModal" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+						<div class="modal-content">
+								<div class="modal-body">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<img class="img-responsive modalImg" src="" />
+								</div>
+						</div>
+				</div>
+			</div>
 			<div id="contact" class="modal fade">
 					 <div class="modal-dialog">
 							 <div class="modal-content">
@@ -79,8 +158,6 @@
 							 </div>
 					 </div>
 			 </div>
-			 <h1> Sous construction </h1>
-
 		<footer>
 			<div class="container">
 				<div class="row">
@@ -123,9 +200,18 @@
 		</footer>
 
 		<script src="http://code.jquery.com/jquery.js"></script>
-
 		<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
-
 		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$('img').on('click', function () {
+						var image = $(this).attr('src');
+						$('#myModal').on('show.bs.modal', function () {
+								$(".modalImg").attr("src", image);
+						});
+				});
+			});
+		</script>
+
   </body>
   </html>

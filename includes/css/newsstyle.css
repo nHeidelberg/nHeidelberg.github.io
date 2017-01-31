@@ -1,0 +1,94 @@
+/* --------------------------------------
+   Main parts fonts and margins
+   -------------------------------------- */
+.section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  overflow: hidden;
+  text-align: justify;
+}
+
+
+.sectionBody {
+  border-left: 8px solid black;
+  padding-bottom: 50px;
+}
+
+.sectionBody p{
+  font-size: 17px;
+}
+
+.FirstSection{
+  margin-top: 150px !important;
+}
+
+.LastSection{
+  margin-bottom: 150px !important;
+}
+
+
+/* --------------------------------------
+   Modal Styles
+   -------------------------------------- */
+
+
+#myModal .modal-content  {
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  border-radius: 0px !important;
+  background-color: inherit;
+  text-align: center;
+  height: auto;
+  min-height: 100%;
+}
+
+
+#myModal .modal-dialog {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#myModal button{
+  font-size: 40px;
+  color: white;
+  opacity: 0.8;
+  border-radius: 0px;
+  margin:0 auto;
+}
+
+#myModal img{
+  margin-top:60px
+
+}
+
+
+
+/* --------------------------------------
+   Section Image Styles
+   -------------------------------------- */
+.section  img{
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0px 15px 15px 15px;
+  width: 200px;
+  height: 200px;
+}
+
+.section img:hover{
+  opacity: 0.7;
+}
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media  (min-width: 768px) and (max-width: 991px)  {
+  .section img {
+    margin: 18px 15px 15px 15px;
+  }
+}
