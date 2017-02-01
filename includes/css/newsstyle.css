@@ -73,7 +73,7 @@
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
-  margin: 3px 15px 15px 15px;
+  margin: 22px 15px 19px 15px;
   width: 230px;
   height: 190px;
 }
@@ -89,6 +89,21 @@
 /* Portrait & landscape phone */
 @media  (min-width: 768px) and (max-width: 991px)  {
   .section img {
-    margin: 18px 15px 15px 15px;
+    margin: 20px 15px 15px 15px;
   }
+}
+
+@media  (min-width: 501px) and (max-width: 767px)  {
+  .section img {
+    margin: 23px 15px 15px 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .section h3 {
+    display:block;
+    clear:both;
+  }
+
+
 }
