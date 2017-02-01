@@ -1,5 +1,3 @@
-
-
 /* --------------------------------------
    Layout
    -------------------------------------- */
@@ -81,6 +79,24 @@ body {
   font-family: 'Lato', 'Open Sans';
 }
 
+#contact .modal-dialog{
+  font-size: 16px;
+}
+
+#contact p{
+  margin-bottom:15px;
+}
+
+.mail {
+  font-weight: bold;
+  color: #1c087f;
+}
+
+.mail:hover {
+  opacity: 0.9;
+  cursor:pointer;
+}
+
 .text-stage {
   font-size: 17px;
 }
@@ -130,6 +146,17 @@ body {
   height: 57px;
 }
 
+.newsWell a:hover {
+  text-decoration: none;
+
+}
+
+.newsWell .header:hover{
+    background-color: #f90e0e;
+    transition: 0.3s;
+    color:#f2f2f2;
+}
+
 .newsWellBody ul {
   list-style-type: none;
 }
@@ -139,20 +166,18 @@ body {
   padding: 5px 15px;
   border-bottom: 1px solid #db0606;
 }
+
 .newsWellBody li:last-child{
   border-bottom: none;
 }
+
 .newsWellBody h4{
     font-weight: bold;
 }
 
-
-
 .well .lead {
   margin: 20px 20px 20px 20px;
 }
-
-
 
 .well .page-header{
   margin-top: 0px;
@@ -192,6 +217,12 @@ h1,h2,h3,h4,h5,h6 {
 .fei {
   background-color: #b1a2db;
 }
+
+.pubWell {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
 /* --------------------------------------
    Navbar
    -------------------------------------- */
@@ -253,20 +284,11 @@ h1,h2,h3,h4,h5,h6 {
 /* --------------------------------------
    Carousel
    -------------------------------------- */
-/*
-#myCarousel{
-  height:300px;
-}
-.carousel-caption {
-top: 20% !important;
-text-align: cente;
-bottom: initial;
-} */
 
 
 
 #myCarousel {
-  margin-top: 49px;
+  margin-top: 60px;
 }
 
 #myCarousel .item{
@@ -274,25 +296,26 @@ bottom: initial;
 }
 
 #slide1{
-  background: url('http://placehold.it/940x400') top center no-repeat;
+  background: url('../../images/carousel_medium_01.jpg') top center no-repeat;
 }
 #slide2{
-  background: url('../../images/carousel_large_02.jpg') top center no-repeat;
+  background: url('../../images/carousel_medium_02.jpg') top center no-repeat;
 }
 #slide3{
-  background: url('../../images/carousel_large_03.jpg') top center no-repeat;
+  background: url('../../images/carousel_medium_03.jpg') top center no-repeat;
 }
 
 .carousel-caption{
   font-size: 24px;
   font-family: 'Open Sans';
+
 }
 
 .carousel-caption h4{
-  font-size: 32px;
-  font-family: 'Open Sans';
+  font-size: 25px;
+  font-family: 'Lato';
+  color:black;
 }
-
 .carousel-indicators{
   margin-bottom: -1px;
 }
@@ -347,7 +370,7 @@ bottom: initial;
     height:310px;
   }
   #slide1{
-    background: url('http://placehold.it/728x310') top center no-repeat;
+    background: url('../../images/carousel_small_01.jpg') top center no-repeat;
   }
   #slide2{
     background: url('../../images/carousel_small_02.jpg') top center no-repeat;
@@ -371,7 +394,7 @@ bottom: initial;
     height:500px;
   }
   #slide1{
-    background: url('http://placehold.it/1170x502') top center no-repeat;
+    background: url('../../images/carousel_large_01.jpg') top center no-repeat;
   }
   #slide2{
     background: url('../../images/carousel_large_02.jpg') top center no-repeat;
@@ -391,4 +414,45 @@ bottom: initial;
   .text-stage {
     text-align: justify;
   }
+}
+
+/* --------------------------------------
+   Publications
+   -------------------------------------- */
+.pubBox {
+  margin-top: 120px;
+  margin-bottom: 100px;
+}
+
+.pubBox table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border-left: 4px solid #969696;
+}
+
+.pubBox th {
+  font-family: 'Lato';
+  font-size: 19px;
+}
+.pubBox td {
+  font-size: 15px;
+}
+
+.pubBox td, th {
+    border: 1px solid #969696;
+    text-align: left;
+    padding: 15px;
+    height:50px;
+}
+
+.pubBox tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.errata {
+  border-left: 4px solid #969696;
+  margin-top: 25px;
+  padding-left: 10px;
+  font-size: 15px;
 }
