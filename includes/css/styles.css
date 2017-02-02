@@ -45,12 +45,23 @@ footer p{
 /* Modications of styles */
 
 body {
-  background-color: white;
+  background-color: #white;
   color: black;
 }
 
+.h6footer{
+  font-weight: bold;
+  font-size: 15px;
+}
 
+.aproposTxt {
+  font-size: 14px;
+}
 
+.inscSpan{
+  display:inline-block;
+  margin-top: 10px;
+}
 
 .panel {
   background-color:  #fafafa;
