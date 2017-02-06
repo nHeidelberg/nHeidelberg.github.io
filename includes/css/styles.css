@@ -16,9 +16,27 @@
 
 
 footer {
-  background-color: #404040;
+  background-color: #717375;
   color:#eee;
   padding: 20px;
+}
+
+footer .logo-col {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+footer .logo-footer{
+  padding:10px 5px 10px 0px;
+}
+
+footer a{
+  color:#cfe1fc;
+}
+
+footer a:hover{
+  color:#cfe1fc;
+  opacity: 0.8
 }
 
 footer h6{
@@ -239,50 +257,56 @@ h1,h2,h3,h4,h5,h6 {
    Navbar
    -------------------------------------- */
 .navbar-brand {
-  padding: 13px 15px;
+  padding: 8px 10px 10px 16px;
 }
 
 .navbar-default {
-  background-color: rgb(48, 48, 47);
-  border-color: #EEE;
+  background-color: #f7f7f7; /*rgb(48, 48, 47)*/;
   color: white;
   text-align: center;
   display:table-cell;
   vertical-align: middle;
 }
 
+
+
 .navbar-nav li a {
-    line-height: 30px;
+    line-height: 33px;
 }
 
 .navbar-default .navbar-nav > li > a {
   color:#f2f2f2;
-  font-size: 1.1em;
+  font-size: 1.15em;
   font-family: 'Lato', 'Open Sans';
-  color:white;
+  color:black;
 }
 
 .navbar-default .navbar-nav > li:focus,
 .navbar-default .navbar-nav > li:hover {
-  color:white;
-  background-color: #DE1B1B;
+  background-color: #ed1a1a;
   transition: all 0.4s ease 0s;
 }
 
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  color:white;
+  text-decoration: underline;
+}
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
   color:white;
-  background-color: #b61616;
+  background-color: black;
 }
- .navbar-default .navbar-toggle{
-   border-radius: 0px !important ;
- }
+
+.navbar-default .navbar-toggle {
+  border-radius: 0px !important ;
+}
 
  .navbar-default .navbar-toggle:hover,
  .navbar-default .navbar-toggle:focus {
-  background-color: #DE1B1B;
+  background-color: #f92222;
   outline: none !important;
   transform: scale(1.05);
   transition: 0.2s;
@@ -405,6 +429,9 @@ h1,h2,h3,h4,h5,h6 {
   .carousel-caption h4{
     font-size: 24px;
   }
+  #myCarousel {
+    margin-top: 50px;
+  }
 }
 
 
@@ -440,8 +467,8 @@ h1,h2,h3,h4,h5,h6 {
    Publications
    -------------------------------------- */
 .pubBox {
-  margin-top: 120px;
-  margin-bottom: 100px;
+  margin-top: 150px;
+  margin-bottom: 110px;
 }
 
 .pubBox table {
