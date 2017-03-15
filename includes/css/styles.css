@@ -241,7 +241,7 @@ h1,h2,h3,h4,h5,h6 {
   color: #474747;
 }
 #featuresHeading .MathetMaroc {
-  font-size : 28px;
+  vertical-align: text-bottom;
 }
 
 .fei {
@@ -465,9 +465,19 @@ h1,h2,h3,h4,h5,h6 {
 /* --------------------------------------
    Publications
    -------------------------------------- */
-.pubBox {
-  margin-top: 150px;
+.pubBoxJournal{
+  margin-top: 130px;
+  margin-bottom: 40px;
+}
+.pubBoxMiniCours{
+  margin-top: 20px;
   margin-bottom: 110px;
+}
+
+.tdHead {
+  text-align:center !important;
+  font-size:1.8em !important;
+  font-weight: bold;
 }
 
 .pubBox table {
