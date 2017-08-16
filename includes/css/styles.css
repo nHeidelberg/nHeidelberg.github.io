@@ -465,11 +465,11 @@ h1,h2,h3,h4,h5,h6 {
 /* --------------------------------------
    Publications
    -------------------------------------- */
-.pubBoxJournal{
+.jourBoxJournal{
   margin-top: 130px;
   margin-bottom: 40px;
 }
-.pubBoxMiniCours{
+.jourBoxMiniCours{
   margin-top: 20px;
   margin-bottom: 110px;
 }
@@ -480,29 +480,29 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: bold;
 }
 
-.pubBox table {
+.jourBox table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
     border-left: 4px solid #969696;
 }
 
-.pubBox th {
+.jourBox th {
   font-family: 'Lato';
   font-size: 19px;
 }
-.pubBox td {
+.jourBox td {
   font-size: 15px;
 }
 
-.pubBox td, th {
+.jourBox td, th {
     border: 1px solid #969696;
     text-align: left;
     padding: 15px;
     height:50px;
 }
 
-.pubBox tr:nth-child(even) {
+.jourBox tr:nth-child(even) {
     background-color: #dddddd;
 }
 
