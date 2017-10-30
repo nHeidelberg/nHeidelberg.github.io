@@ -1,0 +1,188 @@
+/* --------------------------------------
+   Global styles
+   -------------------------------------- */
+
+body {
+  -webkit-font-smoothing:antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: 'Lato', 'Open Sans';
+  background-color:#fcfcfc;
+}
+
+.h6footer{
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.aproposTxt {
+  font-size: 14px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Open sans';
+  font-weight: bold;
+}
+
+#contact .modal-dialog{
+  font-size: 16px;
+}
+
+#contact p{
+  margin-bottom:15px;
+}
+
+.mail {
+  font-weight: bold;
+  color: #1c087f;
+}
+
+.mail:hover {
+  opacity: 0.9;
+  cursor:pointer;
+}
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+   .navbar-brand {
+     padding: 8px 10px 10px 16px;
+   }
+
+   .navbar-default {
+     background-color: #f7f7f7; /*rgb(48, 48, 47)*/;
+     color: white;
+     text-align: center;
+     display:table-cell;
+     vertical-align: middle;
+   }
+
+
+
+   .navbar-nav li a {
+       line-height: 33px;
+   }
+
+   .navbar-default .navbar-nav > li > a {
+     color:#f2f2f2;
+     font-size: 1.15em;
+     font-family: 'Lato', 'Open Sans';
+     color:black;
+   }
+
+   .navbar-default .navbar-nav > li:focus,
+   .navbar-default .navbar-nav > li:hover {
+     background-color: #ed1a1a;
+     transition: all 0.4s ease 0s;
+   }
+
+   .navbar-default .navbar-nav > li > a:focus,
+   .navbar-default .navbar-nav > li > a:hover {
+     color:white;
+     text-decoration: underline;
+   }
+
+   .navbar-default .navbar-nav > .active > a,
+   .navbar-default .navbar-nav > .active > a:focus,
+   .navbar-default .navbar-nav > .active > a:hover {
+     color:white;
+     background-color: black;
+   }
+
+   .navbar-default .navbar-toggle {
+     border-radius: 0px !important ;
+   }
+
+    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-toggle:focus {
+     background-color: #ce3b3b;
+     outline: none !important;
+     transition: 0.2s;
+
+   }
+
+    .navbar-default .navbar-toggle .icon-bar{
+      background-color: black;
+    }
+
+/* --------------------------------------
+    footer
+    -------------------------------------- */
+
+
+    footer {
+      background-color: #717375;
+      color:#eee;
+      padding: 20px;
+    }
+
+    footer .logo-col {
+      text-align: center;
+      padding-bottom: 10px;
+    }
+
+    footer .logo-footer{
+      padding:10px 5px 10px 0px;
+    }
+
+    footer a{
+      color:#cfe1fc;
+    }
+
+    footer a:hover{
+      color:#cfe1fc;
+      opacity: 0.8
+    }
+
+    footer h6{
+      font-size: 1em;
+    }
+
+    footer p{
+      font-size: 0.9em;
+    }
+
+
+/* --------------------------------------
+   MemberPanel
+   -------------------------------------- */
+   .title{
+     margin-top : 80px;
+     color :black;
+   }
+
+   .ipdn h5 {
+     padding : 15px;
+     font-size: 20px;
+   }
+
+   .members {
+     margin-top: 0px;
+     text-align: center;
+   }
+
+   .members iframe {
+     margin-bottom:5px;
+     margin-top: 35px;
+   }
+
+   .lastMember {
+     margin-bottom:100px;
+   }
+
+
+   /* --------------------------------------
+      IPDN
+      -------------------------------------- */
+  .ipdn {
+    border-top: 5px solid black;
+    padding: 10px;
+  }
+
+  .ipdn:first-child {
+    border-top: 0px solid white;
+  }
+
+  .ipdn iframe {
+    margin-bottom:20px;
+    margin-top: 10px;
+  }
