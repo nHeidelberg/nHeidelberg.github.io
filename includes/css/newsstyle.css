@@ -29,7 +29,19 @@
   margin-bottom: 150px !important;
 }
 
+.fb-banner{
+  padding: 10px;
+  text-align: center;
+  border:1px solid black;
+  border-left: 3px solid black;
+  font-size: 18px;
+  color: #0C072D;
+  font-weight: 300;
+}
 
+.fb-link{
+  color: #1D49D3;
+}
 /* --------------------------------------
    Modal Styles
    -------------------------------------- */
