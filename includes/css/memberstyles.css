@@ -167,3 +167,9 @@ h1,h2,h3,h4,h5,h6 {
    .members p {
      margin-bottom: 50px;
    }
+    .img-circle {
+        min-width: 200px;
+        min-height: 200px;
+        max-width: 200px;
+        max-height: 200px;
+    }
