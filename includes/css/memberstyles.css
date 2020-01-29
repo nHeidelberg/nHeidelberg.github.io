@@ -145,31 +145,71 @@ h1,h2,h3,h4,h5,h6 {
 /* --------------------------------------
    MemberPanel
    -------------------------------------- */
-   .title{
+    .title{
      margin-top : 80px;
      color :black;
-   }
+    }
 
-   .members {
-     margin-top: 0px;
+    .members {
      text-align: center;
-   }
+    }
 
-   .members img {
-     margin-bottom:5px;
-     margin-top: 35px;
-   }
 
-   .lastMember {
+    .lastMember {
      margin-bottom:100px;
-   }
+    }
 
-   .members p {
-     margin-bottom: 50px;
-   }
     .img-circle {
         min-width: 200px;
         min-height: 200px;
         max-width: 200px;
         max-height: 200px;
+    }
+    .flip-card {
+        margin: 20px auto;
+        background-color: transparent;
+        width: 200px;
+        height: 200px;
+        /*border: 1px solid #f1f1f1;*/
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    }
+
+    /* This container is needed to position the front and back side */
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    /* Position the front and back side */
+    .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        backface-visibility: hidden;
+        text-align: center;
+
+    }
+
+    /* Style the front side (fallback if image is missing) */
+    .flip-card-front {
+        background-color: #bbb;
+        color: black;
+    }
+
+    /* Style the back side */
+    .flip-card-back {
+        background-color: #000000;
+        color: white;
+        transform: rotateY(180deg);
+        padding-top: 4em;
     }
