@@ -1,3 +1,5 @@
 # Contirbutor folders and files
 ## IDE files
 */.idea/
+.DS_Store
+journal/.DS_Store
